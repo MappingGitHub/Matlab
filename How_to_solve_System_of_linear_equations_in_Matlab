@@ -1,0 +1,26 @@
+% https://en.wikipedia.org/wiki/System_of_linear_equations
+
+% 3x + 2y - z = 1
+% 2x - 2y + 4z =-2
+% -x+0.5y  -z = 0
+
+A=[3 2 -1; 2 -2 4 ; -1 0.5 -1];
+A
+b=[1 -2 0];
+
+%Long solution methos is using is : 
+
+b=b'
+
+x=inv(A)*b
+
+
+%A solution to the system above is given by :
+
+% x=1
+% y=-2
+% z=-2
+%#############################################################
+% Matlab solution for this type of questions: 
+
+A\b
