@@ -6,7 +6,7 @@
 
 A=[3 2 -1; 2 -2 4 ; -1 0.5 -1];
 A
-b=[1 -2 -2];
+b=[1 -2 0];
 
 %Long solution methos is using is : 
 
