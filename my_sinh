@@ -1,0 +1,10 @@
+%my_sinh.m
+function y = my_sinh(x)
+
+y=(exp(x)-exp(-x))/2;
+end
+
+%my_sinh(1)
+
+x=0:10
+my_sinh(x)
