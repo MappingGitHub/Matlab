@@ -1,0 +1,8 @@
+% In linear algebra, the determinant is a scalar value that can be computed
+% from the elements of a square matrix and encodes certain properties of the
+% linear transformation described by the matrix
+
+
+A=[ 2 3;5 6];
+A
+det(A)
