@@ -1,0 +1,3 @@
+%first parameter is the field name and second parameter is the value
+employee_struct=struct('name','john', 'Employee_Number','HR4873')
+employee_struct
