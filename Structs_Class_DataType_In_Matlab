@@ -1,0 +1,11 @@
+%
+
+my_struct.First_Name='Jack'
+my_struct.gender='M'
+my_struct.Age=27
+class(my_struct.First_Name)
+class(my_struct.Age)
+my_struct
+%rmfield(my_struct,'gender')
+my_struct
+isfield(my_struct.address)
