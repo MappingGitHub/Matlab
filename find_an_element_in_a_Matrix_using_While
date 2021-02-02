@@ -1,0 +1,11 @@
+X=1:10
+i=0
+found=0
+while ~found
+i=i+1
+if X(i)==8
+disp("I found 8" \n);
+%set found TRUE 
+found=1;
+end
+end
