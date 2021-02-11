@@ -1,0 +1,26 @@
+i=[0.57,1.01,1.50,2.02,2.53,3.02,3.59,4.05,4.50,5.02];
+V=[3.30,6.16,6.73,11.98,13.60,15.09,18.41,21.19,22.95,26.98];
+hold off;
+plot (i,V,'ro');
+xlabel('Current (A)');
+ylabel('Voltage (V)');
+R=V./i;
+p=polyfit(i,V,1);
+R=p(1);
+n=length(i);
+epsilon= sqrt(sum((V-p(1)*i-p(2)).^2)/(n-2));
+delta=n*sum(i.^2)-(sum(i))^2;
+sigmaa = sqrt(n*epsilon^2/delta);
+sigmab = sqrt(epsilon^2*sum(i.^2)/delta);
+hold on 
+plot(i,p(1)*i+p(2),'-');
+title('Voltage (V) vs. Current(A)');
+legend('First Data set',['R=' num2str(R,3) ' +/- ' num2str(sigmaa,3) ' Ohm'],'location','southeast');
+lgd = legend;
+lgd.FontSize = 12; 
+lgd.Title.String = 'Name : John Smith';
+print('Lab0_SarmenBajari_Phys220BL.pdf' , '-dpdf');
+%print('Lab0_SarmenBajari_Phys220BL.png' , '-dpng');
+
+
+
